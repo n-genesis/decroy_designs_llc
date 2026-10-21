@@ -1,0 +1,306 @@
+<?php
+
+namespace App\Database\Seeds;
+
+use CodeIgniter\Database\Seeder;
+use CodeIgniter\I18n\Time;
+
+class UploadedImagesSeeder extends Seeder
+{
+    public function run() {
+
+        $ImagesData = [
+            [
+                'image_path' => 'uploads/images/470184046.jpg', 
+                'file_name' => '470184046.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/470188234_122099241248694170_7210410190054739218_n.jpg', 
+                'file_name' => '470188234_122099241248694170_7210410190054739218_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/470231250.webp', 
+                'file_name' => '470231250.webp',
+                'mime_type' => 'webp',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/470232420_122099241128694170_5422547715584635179_n.jpg', 
+                'file_name' => '470232420_122099241128694170_5422547715584635179_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/470245302_122099241386694170_4608760272676733332_n.jpg', 
+                'file_name' => '470245302_122099241386694170_4608760272676733332_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/470471260_122099241764694170_5052467018179591108_n.jpg', 
+                'file_name' => '470471260_122099241764694170_5052467018179591108_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/470477198.jpg', 
+                'file_name' => '470477198.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/470477339.jpg', 
+                'file_name' => '470477339.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/470505050_122098417760694170_7681164654485449691_n.jpg', 
+                'file_name' => '470505050_122098417760694170_7681164654485449691_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/470565951_122099240522694170_3609748135653541248_n.jpg', 
+                'file_name' => '470565951_122099240522694170_3609748135653541248_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/470857540.jpg', 
+                'file_name' => '470857540.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/491834393_122131504178694170_554918701542890661_n.jpg', 
+                'file_name' => '491834393_122131504178694170_554918701542890661_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/building-800x600.png', 
+                'file_name' => 'building-800x600.png',
+                'mime_type' => 'png',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro1-001.jpg', 
+                'file_name' => 'pro1-001.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro1-002.jpg', 
+                'file_name' => 'pro1-002.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro1-003.jpg', 
+                'file_name' => 'pro1-003.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro1-004.jpg', 
+                'file_name' => 'pro1-004.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro1-005.jpg', 
+                'file_name' => 'pro1-005.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro2-001.jpg', 
+                'file_name' => 'pro2-001.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro2-002.jpg', 
+                'file_name' => 'pro2-002.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro2-003.jpg', 
+                'file_name' => 'pro2-003.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro2-004.jpg', 
+                'file_name' => 'pro2-004.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro2-005.jpg', 
+                'file_name' => 'pro2-005.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro2-006.jpg', 
+                'file_name' => 'pro2-006.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro2-007.jpg', 
+                'file_name' => 'pro2-007.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/pro2-008.jpg', 
+                'file_name' => 'pro2-008.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/showcase-1.webp', 
+                'file_name' => 'showcase-1.webp',
+                'mime_type' => 'webp',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/showcase-2.webp', 
+                'file_name' => 'showcase-2.webp',
+                'mime_type' => 'webp',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/showcase-3.webp', 
+                'file_name' => 'showcase-3.webp',
+                'mime_type' => 'webp',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/528047429_1268224321375065_8961599760184512900_n.jpg', 
+                'file_name' => '528047429_1268224321375065_8961599760184512900_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/528045269_1268224468041717_4289561460979933808_n.jpg', 
+                'file_name' => '528045269_1268224468041717_4289561460979933808_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/527799476_1268224541375043_1547662029261487903_n.jpg', 
+                'file_name' => '527799476_1268224541375043_1547662029261487903_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/528328477_1268224634708367_90636456530063988_n.jpg', 
+                'file_name' => '528328477_1268224634708367_90636456530063988_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/527988354_1268224661375031_8450846591151300655_n.jpg', 
+                'file_name' => '527988354_1268224661375031_8450846591151300655_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/528611437_1268224721375025_2598184714186845857_n.jpg', 
+                'file_name' => '528611437_1268224721375025_2598184714186845857_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/528163243_1268229448041219_7257767536080434069_n.jpg', 
+                'file_name' => '528163243_1268229448041219_7257767536080434069_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/528332751_1268229441374553_7791937071975117286_n.jpg', 
+                'file_name' => '528332751_1268229441374553_7791937071975117286_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/528212183_1268229584707872_4053738333929866693_n.jpg', 
+                'file_name' => '528212183_1268229584707872_4053738333929866693_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/528555228_1268230934707737_9096921512960028534_n.jpg', 
+                'file_name' => '528555228_1268230934707737_9096921512960028534_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/670488703_1465533891644106_8383145504467906495_n.jpg', 
+                'file_name' => '670488703_1465533891644106_8383145504467906495_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+            [
+                'image_path' => 'uploads/images/666515129_1460259548838207_1212228172188927331_n.jpg', 
+                'file_name' => '666515129_1460259548838207_1212228172188927331_n.jpg',
+                'mime_type' => 'jpg',
+                'file_size' => 1048576,
+                'created_at' => Time::now()->toDateTimeString(),
+            ],
+
+
+        ];
+
+        $this->db->table('uploaded_images')->insertBatch($ImagesData);
+    }
+}
