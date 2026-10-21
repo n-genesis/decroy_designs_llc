@@ -65,6 +65,9 @@ Ensure you have the following installed locally:
 ## ✍️ Content Management (CMS)
 Portfolio text changes, adding new construction project images, and editing company testimonials do not require direct code pushes. Team members can use the configured CMS platform to publish fresh content, which triggers a webhook to rebuild the frontend dynamically.
 
+## 🌐 Deployment Pipeline
+TO BE ADDED
+
 
 ## 📄 License & Ownership
 Copyright © 2026 DeCroy Designs LLC. All rights reserved. 
