@@ -58,7 +58,7 @@ Ensure you have the following installed locally:
 ```text
 ├── admin/              # backend HTML Template
 ├── ddllc_website_ci4/  # CI4 Project
-├── images/             # Static assets (logos, icons, web manifest)
+├── logo/               # Static assets (logos, icons)
 ├── template/           # backend HTML Template
 ```
 
