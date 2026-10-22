@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Estimation Quote Form</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body class="bg-light py-5">
+
+<div class="container bg-white p-5 rounded shadow-sm" style="max-width: 900px;">
+    <!-- Form Header -->
+    <div class="border-bottom pb-4 mb-4 d-flex justify-content-between align-items-center">
+        <div>
+            <h2 class="fw-bold text-primary"><i class="bi bi-calculator-history me-2"></i>Construction Estimate</h2>
+            <p class="text-muted mb-0">Generate or request a detailed project bid estimation.</p>
+        </div>
+        <div class="text-end">
+            <span class="badge bg-secondary p-2 mb-1">Quote Template</span>
+            <div class="small text-muted">Valid for 30 Days</div>
+        </div>
+    </div>
+
+    <form action="#" method="POST" class="needs-validation" novalidate>
+        
+        <!-- SECTION 1: Administrative Details -->
+        <h5 class="mb-3 text-secondary fw-semibold">1. Administration & Timeline</h5>
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <label for="quoteNumber" class="form-label">Estimate / Quote #</label>
+                <input type="text" class="form-control" id="quoteNumber" placeholder="EST-2026-001" required>
+            </div>
+            <div class="col-md-4">
+                <label for="datePrepared" class="form-label">Date Prepared</label>
+                <input type="date" class="form-control" id="datePrepared" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validUntil" class="form-label">Valid Until</label>
+                <input type="date" class="form-control" id="validUntil" required>
+            </div>
+        </div>
+
+        <!-- SECTION 2: Client & Project Info -->
+        <h5 class="mb-3 text-secondary fw-semibold">2. Client & Site Information</h5>
+        <div class="row g-3 mb-4">
+            <div class="col-md-6">
+                <label for="clientName" class="form-label">Client / Company Name</label>
+                <input type="text" class="form-control" id="clientName" placeholder="John Doe or ABC Corp" required>
+            </div>
+            <div class="col-md-6">
+                <label for="clientEmail" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="clientEmail" placeholder="name@example.com" required>
+            </div>
+            <div class="col-md-6">
+                <label for="clientPhone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="clientPhone" placeholder="(555) 000-0000" required>
+            </div>
+            <div class="col-md-6">
+                <label for="projectType" class="form-label">Project Type</label>
+                <select class="form-select" id="projectType" required>
+                    <option value="" selected disabled>Choose a project scale...</option>
+                    <option value="residential-remodel">Residential Remodel</option>
+                    <option value="commercial-build">Commercial Build out</option>
+                    <option value="roofing-exterior">Roofing & Exterior</option>
+                    <option value="hvac-plumbing">HVAC / Plumbing Infrastructure</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="projectAddress" class="form-label">Project Site Address</label>
+                <input type="text" class="form-control" id="projectAddress" placeholder="123 Construction Way, Suite A" required>
+            </div>
+        </div>
+
+        <!-- SECTION 3: Scope of Work -->
+        <h5 class="mb-3 text-secondary fw-semibold">3. Scope of Work</h5>
+        <div class="row g-3 mb-4">
+            <div class="col-12">
+                <label for="scopeDescription" class="form-label">Detailed Job Specifications</label>
+                <textarea class="form-control" id="scopeDescription" rows="4" placeholder="Describe architectural layout references, explicit tasks, material specifications, and client requests..." required></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="startDate" class="form-label">Estimated Start Date</label>
+                <input type="date" class="form-control" id="startDate">
+            </div>
+            <div class="col-md-6">
+                <label for="endDate" class="form-label">Estimated Completion Date</label>
+                <input type="date" class="form-control" id="endDate">
+            </div>
+        </div>
+
+        <!-- SECTION 4: Itemized Estimates Table -->
+        <h5 class="mb-3 text-secondary fw-semibold">4. Line-Item Cost Breakdown</h5>
+        <div class="table-responsive mb-4">
+            <table class="table table-bordered align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th style="width: 45%;">Item / Task Description</th>
+                        <th style="width: 15%;">Quantity</th>
+                        <th style="width: 20%;">Unit Price ($)</th>
+                        <th style="width: 20%;">Total ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" class="form-control form-control-sm" placeholder="e.g., Concrete Foundation Material" required>
+                        </td>
+                        <td>
+                            <input type="number" class="form-control form-control-sm" placeholder="0" min="1" required>
+                        </td>
+                        <td>
+                            <input type="number" class="form-control form-control-sm" placeholder="0.00" step="0.01" required>
+                        </td>
+                        <td>
+                            <input type="number" class="form-control form-control-sm bg-light" placeholder="0.00" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="form-control form-control-sm" placeholder="e.g., Framing Labor Hours">
+                        </td>
+                        <td>
+                            <input type="number" class="form-control form-control-sm" placeholder="0" min="1">
+                        </td>
+                        <td>
+                            <input type="number" class="form-control form-control-sm" placeholder="0.00" step="0.01">
+                        </td>
+                        <td>
+                            <input type="number" class="form-control form-control-sm bg-light" placeholder="0.00" readonly>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-outline-secondary btn-sm"><i class="bi bi-plus-circle me-1"></i>Add Row</button>
+        </div>
+
+        <!-- SECTION 5: Financial Summary -->
+        <h5 class="mb-3 text-secondary fw-semibold">5. Financial Summary</h5>
+        <div class="row justify-content-end mb-4">
+            <div class="col-md-5">
+                <div class="card p-3 bg-light border-0">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted">Subtotal:</span>
+                        <span class="fw-semibold">$0.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted">Tax / Markups:</span>
+                        <span class="fw-semibold">$0.00</span>
+                    </div>
+                    <hr class="my-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold text-dark">Grand Total:</span>
+                        <span class="fs-5 fw-bold text-primary">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 6: Legal & Terms -->
+        <h5 class="mb-3 text-secondary fw-semibold">6. Terms & Approvals</h5>
+        <div class="row g-3 mb-4">
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="legalTerms" required>
+                    <label class="form-check-label text-muted small" for="legalTerms">
+                        I acknowledge that this is an estimation framework. Final billing figures may alter upon structural discovery, utility mapping updates, or municipal permit assessments.
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Submission -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end border-top pt-4">
+            <button class="btn btn-light me-md-2" type="reset">Clear Form</button>
+            <button class="btn btn-primary px-4" type="submit"><i class="bi bi-file-earmark-check me-2"></i>Submit Estimate</button>
+        </div>
+
+    </form>
+</div>
+
+<!-- Bootstrap 5 JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+</script>
+
+</body>
+</html>
