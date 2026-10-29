@@ -5,7 +5,7 @@
     <title>Welcome to N-Gen Design</title>
     <meta name="description" content="N-Gen Design - Next Generation Web and Visual Solutions">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link href="<?= base_url('favicon.ico') ?>" type="image/x-icon" rel="icon" />
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -65,10 +65,12 @@
                     <h1 class="display-4 fw-bold mb-3">Next-Generation Framework <br>Meets Cutting-Edge Design</h1>
                     <p class="lead text-white-50 mb-4">Your CodeIgniter 4 application developed by <strong>N-Gen Design</strong> is successfully configured and ready for development.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <a href="https://ngendesign.net/n-gencms" target="_blank" class="btn btn-light btn-lg px-4 gap-3 fw-bold text-primary">
+                        <a href="https://codeigniter.com/user_guide/index.html" target="_blank" class="btn btn-light btn-lg px-4 gap-3 fw-bold text-primary">
+                            <i class="bi bi-book-half me-2"></i>Read CI4 Docs
+                        </a>
+                        <a href="https://ngendesign.net/n-gencms" target="_blank" class="btn btn-outline-light btn-lg px-4">
                             Learn More
                         </a>
-                        <a href="#get-started" class="btn btn-outline-light btn-lg px-4">Get Started</a>
                     </div>
                 </div>
             </div>
