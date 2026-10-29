@@ -65,8 +65,8 @@
                     <h1 class="display-4 fw-bold mb-3">Next-Generation Framework <br>Meets Cutting-Edge Design</h1>
                     <p class="lead text-white-50 mb-4">Your CodeIgniter 4 application developed by <strong>N-Gen Design</strong> is successfully configured and ready for development.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <a href="https://codeigniter.com/user_guide/index.html" target="_blank" class="btn btn-light btn-lg px-4 gap-3 fw-bold text-primary">
-                            <i class="bi bi-book-half me-2"></i>Read CI4 Docs
+                        <a href="https://ngendesign.net/n-gencms" target="_blank" class="btn btn-light btn-lg px-4 gap-3 fw-bold text-primary">
+                            Learn More
                         </a>
                         <a href="#get-started" class="btn btn-outline-light btn-lg px-4">Get Started</a>
                     </div>
