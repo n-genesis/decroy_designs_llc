@@ -26,7 +26,7 @@
 
   <!-- Card Body / Form Fields -->
   <div class="card-body p-4">
-    <div class="bm-3">
+    <div class="mb-3">
       <?php if (session('error') !== null) : ?>
             <div class="alert alert-danger small" role="alert"><?= esc(session('error')) ?></div>
         <?php elseif (session('errors') !== null) : ?>
